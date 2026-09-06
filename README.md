@@ -73,20 +73,22 @@ Predicted Length of Stay: 7.2 days
 ```
 # Some samples to try on.
 Respiratory_Rate,Oxygen_Saturation,O2_Scale,Systolic_BP,Heart_Rate,Temperature,Consciousness,On_Oxygen,Risk_Level
+```
 25,96,1,97,107,37.5,A,0,Medium
 28,92,2,116,151,38.5,P,1,High
 18,98,1,127,72,36.6,A,0,Normal
 19,97,1,104,93,37.9,A,1,Low
-
+```
  gender,dialysisrenalendstage,asthma,irondef,pneum,substancedependence,psychologicaldisordermajor,depress,
  psychother,fibrosisandother,malnutrition,hemo,hematocrit,neutrophils,sodium,glucose,bloodureanitro,creatinine,
  bmi,pulse,respiration,secondarydiagnosisnonicd9,discharged,facid, rcount -> lengthofstay
+ ```
 F,0,0,0,0,0,0,0,0,0,0,0,11.5,14.2,140.3611318,192.4769177,12,1.390722238,30.43241778,96,6.5,4,B,0, -->  3
 F,0,0,0,0,0,0,0,0,0,0,0,9,4.1,136.7316918,94.07850731,8,0.943164319,28.46051612,61,6.5,1,A,5+, --> 7
 F,0,0,0,0,0,0,0,0,0,0,0,8.4,8.9,133.0585135,130.5305238,12,1.065750282,28.84381191,64,6.5,2,B,1 --> 3
 F,0,0,0,0,0,0,0,0,0,0,0,11.9,9.4,138.994023,163.3770276,12,0.90686182,27.95900732,76,6.5,1,,A,0 -->1
 F,0,0,0,1,0,1,0,0,0,0,0,9.1,9.05,138.6348364,94.88665408,11.5,1.242854164,30.25892703,67,5.6,2,E,0 --> 4
-
+```
 ## Notes / Limitations
 - Trained on a small/sample dataset — not representative of all patient populations.
 - No input validation yet on interactive prompts (e.g., invalid consciousness letters or non-numeric input will raise an error).
